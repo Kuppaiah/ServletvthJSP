@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletvthJSP</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+ <!--  <servlet>
+  <servlet-name>Jspfiles</servlet-name>
+  <servlet-class>com.servletnjsp.Testservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>Jspfiles</servlet-name>
+   <url-pattern>/test</url-pattern>
+   </servlet-mapping> -->
+   
+   <servlet>
+  <servlet-name>Datafiles</servlet-name>
+  <servlet-class>com.servletnjsp.Dataservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>Datafiles</servlet-name>
+   <url-pattern>/data</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>Logoutpg</servlet-name>
+  <servlet-class>com.servletnjsp.Logoutservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>Logoutpg</servlet-name>
+   <url-pattern>/logout</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+  <servlet-name>saveservlet</servlet-name>
+  <servlet-class>com.servlet.Studservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>saveservlet</servlet-name>
+   <url-pattern>/saveservlet</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+  <servlet-name>getallserv</servlet-name>
+  <servlet-class>com.servlet.Getallservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>getallserv</servlet-name>
+   <url-pattern>/getallservlet</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+  <servlet-name>getserv</servlet-name>
+  <servlet-class>com.servlet.Getservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>getserv</servlet-name>
+   <url-pattern>/getservlet</url-pattern>
+   </servlet-mapping> 
+   
+    <servlet>
+  <servlet-name>deleteservlet</servlet-name>
+  <servlet-class>com.servlet.Deleteservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>deleteservlet</servlet-name>
+   <url-pattern>/deleteservlet</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+  <servlet-name>updateservlet</servlet-name>
+  <servlet-class>com.servlet.Deleteservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>updateservlet</servlet-name>
+   <url-pattern>/updateservlet</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>loginDisplayservlet</servlet-name>
+  <servlet-class>com.servlet.loginDisplayservlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>loginDisplayservlet</servlet-name>
+   <url-pattern>/logindisplayservlet</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>testpgservlet</servlet-name>
+  <servlet-class>com.servlet.Testservletpg</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>testpgservlet</servlet-name>
+   <url-pattern>/testpgservlet</url-pattern>
+   </servlet-mapping>
+   
+   <filter>
+     <filter-name>firstfilter</filter-name>
+     <filter-class>com.Filterspkg.Firstfilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>firstfilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+   
+    <filter>
+     <filter-name>secondfilter</filter-name>
+     <filter-class>com.Filterspkg.Secondfilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>secondfilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping> 
+  
+</web-app>
